@@ -21,17 +21,98 @@
 
 </head>
 <body>
+<!-- Cookie Banner -->
+<style>
+  
+  #cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    max-width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    z-index: 9999;
+    display: none;
+  }
+
+  #cookie-banner p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+
+  #cookie-banner button {
+    background: #0d6efd;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  #cookie-banner button:hover {
+    background: #084298;
+  }
+
+  @media (max-width: 576px) {
+    #cookie-banner {
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+    }
+  }
+</style>
+
+<div id="cookie-banner">
+  <p>
+    We use cookies to improve your experience on our website. By continuing, you agree to our use of cookies.
+  </p>
+ 
+  <button onclick="acceptCookies()">Accept</button>
+  <button onclick="declineCookies()">Decline</button>
+</div>
+
+<script>
+  
+  function acceptCookies() {
+    localStorage.setItem("cookiesAccepted", "true");
+    document.getElementById("cookie-banner").style.display = "none";
+  }
+
+  window.onload = function () {
+    if (!localStorage.getItem("cookiesAccepted")) {
+      document.getElementById("cookie-banner").style.display = "block";
+    }
+  };
+  
+</script>
+
+
+
+<script>
+function declineCookies() {
+  document.getElementById("cookie-banner").style.display = "none";
+}
+</script>
+
+<!-- Calendly Script (IMPORTANT: place this before using it) -->
+<script src="https://assets.calendly.com/assets/external/widget.js"></script>
+
 
 <!-- NAV -->
 <nav class="navbar navbar-expand-lg">
 <div class="container">
-<a class="navbar-brand fw-bold" href="#">Growth Capital</a>
+  <img src="/images/logo/Growth capital.jpg.png" style="height: 60px; margin-right: 10px" alt="Growth Capital Logo">
+<a class="navbar-brand mt-auto " href="">Growth Capital</a>
 <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#nav">☰</button>
 <div class="collapse navbar-collapse" id="nav">
 <ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
 <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
 </ul>
 </div>
@@ -116,9 +197,7 @@
   </div>
 
 </section>
-<!-- Calendly Inline Widget -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/austinwarry/consultation" style="min-width:320px;height:630px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
 <!-- ABOUT -->
 <section id="about" class="pb-5">
 <div class="container">
@@ -234,14 +313,60 @@
 <section class="cta p-5">
 <div class="container" data-aos="fade-up">
 <h2>Ready to Expand?</h2>
-<a href="#contact" class="btn btn-warning">Contact Us</a>
+<a href="contact-us.html" class="btn btn-warning">Contact Us</a>
 </div>
 </section>
 
 
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column brand-section">
+      <div class="footer-logo-container">
+        <img src="/images/logo/Growth capital.jpg.png" alt="Growth Capital Logo" class="footer-logo-img" style="height:50px">
+      </div>
+      <h4 class="footer-logo">GROWTH<span>CAPITAL</span></h4>
+      <p>Your Strategic Partner for Market Expansion & Investment in Africa. We unlock potential while mitigating risk and maximizing returns.</p>
+      <!-- Social Media links -->
+      <!-- <div class="social-links">
+        <a href="#" aria-label="LinkedIn">LI</a>
+        <a href="#" aria-label="Twitter">TW</a>
+      </div> -->
+    </div>
 
-<footer>
-<p>© 2026 Growth Capital</p>
+    <div class="footer-column">
+      <h3>Our Services</h3>
+      <ul>
+        <li><a href="services.html#Market Entry">Market Entry</a></li>
+        <li><a href="services.html#investor-funding">Investor Funding</a></li>
+        <li><a href="services.html#business-summit">Business Summit</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Trusted Partners</h3>
+      <ul>
+        <li><a href="https://kac-afrika.de/en/" target="_blank">Kac-Afrika</a></li>
+        <li><a href="https://galeenergy.com/" target="_blank">Gale Energy</a></li>
+        <li><a href="https://www.pallottiner.org/" target="_blank">Pallottiner</a></li>
+        <li><a href="https://www.auto-assemblyplants.com/" target="_blank">Chongqing Big Science</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Start Your Expansion</h3>
+      <p>Ready to scale across African markets? Connect with our team of experts today.</p>
+      <a href="/contact-us.html#booking" class="btn cta-button">Book a Free Consultation</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="bottom-container">
+      <p>&copy; 2026 Growth Capital. All rights reserved.</p>
+      <div class="legal-links">
+        <a href="https://lexoraworks.com" class="text-decoration-none"><p>Design by LexoraWorks</p></a>
+      </div>
+    </div>
+  </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

@@ -7,7 +7,7 @@
 
 <!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+<link rel="stylesheet" href="lexora/custom.css">
 <!-- Icons -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
@@ -56,16 +56,16 @@ footer { background:#0B1F3A; color:#aaa; text-align:center; padding:20px; }
 <body>
 
 <!-- NAV -->
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg" >
 <div class="container">
 <a class="navbar-brand fw-bold" href="#">Growth Capital</a>
 <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#nav">☰</button>
 <div class="collapse navbar-collapse" id="nav">
 <ul class="navbar-nav ms-auto">
 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-<li class="nav-item"><a class="nav-link" href="contact-us.html">Contact</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+<li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
 </ul>
 </div>
 </div>
@@ -76,7 +76,7 @@ footer { background:#0B1F3A; color:#aaa; text-align:center; padding:20px; }
 <div class="container" data-aos="fade-up">
 <h1>Services</h1>
 <p>Strategic market entry, investment facilitation, and high-impact networking.</p>
-<a href="#contact" class="btn btn-warning">Get Started</a>
+<a href="contact-us.html" class="btn btn-warning">Get Started</a>
 </div>
 </section>
 
@@ -112,7 +112,7 @@ AOS.init();
     </div>
 
     <!-- SERVICE 1 -->
-    <div class="row align-items-center mb-5">
+    <div class="row align-items-center mb-5" id="Market Entry">
       <div class="col-md-6" data-aos="fade-right">
         <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df" class="img-fluid rounded">
       </div>
@@ -132,7 +132,7 @@ AOS.init();
     </div>
 
     <!-- SERVICE 2 -->
-    <div class="row align-items-center mb-5 flex-md-row-reverse">
+    <div class="row align-items-center mb-5 flex-md-row-reverse" id="investor-funding">
       <div class="col-md-6" data-aos="fade-left">
         <img src="https://images.unsplash.com/photo-1559526324-593bc073d938" class="img-fluid rounded">
       </div>
@@ -152,7 +152,7 @@ AOS.init();
     </div>
 
     <!-- SERVICE 3 -->
-    <div class="row align-items-center mb-5">
+    <div class="row align-items-center mb-5" id="business-summit">
       <div class="col-md-6" data-aos="fade-right">
         <img src="https://images.unsplash.com/photo-1515169067865-5387ec356754" class="img-fluid rounded">
       </div>
@@ -175,11 +175,60 @@ AOS.init();
     <div class="text-center mt-5" data-aos="fade-up">
       <h2>Let’s Help You Grow</h2>
       <p>Partner with us to unlock opportunities across Africa</p>
-      <a href="#contact" class="btn btn-warning">Get Started</a>
+      <a href="contact-us.html" class="btn btn-warning">Get Started</a>
     </div>
 
   </div>
 </section>
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column brand-section">
+      <div class="footer-logo-container">
+        <img src="/images/logo/Growth capital.jpg.png" alt="Growth Capital Logo" class="footer-logo-img" style="height:50px">
+      </div>
+      <h4 class="footer-logo">GROWTH<span>CAPITAL</span></h4>
+      <p>Your Strategic Partner for Market Expansion & Investment in Africa. We unlock potential while mitigating risk and maximizing returns.</p>
+      <!-- Social Media links -->
+      <!-- <div class="social-links">
+        <a href="#" aria-label="LinkedIn">LI</a>
+        <a href="#" aria-label="Twitter">TW</a>
+      </div> -->
+    </div>
 
+    <div class="footer-column">
+      <h3>Our Services</h3>
+      <ul>
+        <li><a href="services.html#Market Entry">Market Entry</a></li>
+        <li><a href="services.html#investor-funding">Investor Funding</a></li>
+        <li><a href="services.html#business-summit">Business Summit</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Trusted Partners</h3>
+      <ul>
+        <li><a href="https://kac-afrika.de/en/" target="_blank">Kac-Afrika</a></li>
+        <li><a href="https://galeenergy.com/" target="_blank">Gale Energy</a></li>
+        <li><a href="https://www.pallottiner.org/" target="_blank">Pallottiner</a></li>
+        <li><a href="https://www.auto-assemblyplants.com/" target="_blank">Chongqing Big Science</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Start Your Expansion</h3>
+      <p>Ready to scale across African markets? Connect with our team of experts today.</p>
+      <a href="/contact-us.html#booking" class="btn cta-button">Book a Free Consultation</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="bottom-container">
+      <p>&copy; 2026 Growth Capital. All rights reserved.</p>
+      <div class="legal-links">
+        <a href="https://lexoraworks.com" class="text-decoration-none"><p>Design by LexoraWorks</p></a>
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

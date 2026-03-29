@@ -7,7 +7,7 @@
 
 <!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+<link rel="stylesheet" href="lexora/custom.css">
 <!-- Icons -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
@@ -58,13 +58,14 @@ footer { background:#0B1F3A; color:#aaa; text-align:center; padding:20px; }
 <!-- NAV -->
 <nav class="navbar navbar-expand-lg">
 <div class="container">
-<a class="navbar-brand fw-bold" href="#">Growth Capital</a>
+  <img src="/images/logo/Growth capital.jpg.png" style="height: 60px; margin-right: 10px" alt="Growth Capital Logo">
+<a class="navbar-brand mt-auto " href="">Growth Capital</a>
 <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#nav">☰</button>
 <div class="collapse navbar-collapse" id="nav">
 <ul class="navbar-nav ms-auto">
 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
 <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
 <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
 </ul>
 </div>
@@ -76,7 +77,7 @@ footer { background:#0B1F3A; color:#aaa; text-align:center; padding:20px; }
 <div class="container" data-aos="fade-up">
 <h1>Contact Us</h1>
 <p>Strategic market entry, investment facilitation, and high-impact networking.</p>
-<a href="#contact" class="btn btn-warning">Get Started</a>
+<a href="#booking" class="btn btn-warning">Book a Free Consultation</a>
 </div>
 </section>
 
@@ -98,57 +99,126 @@ AOS.init();
 
 
 <!-- CONTACT PAGE (USE AS contact.html) -->
-<section id="contact-page" class="bg-light">
+<section id="contact-page" class="py-5" style="background:#f8f9fa;">
   <div class="container">
 
+    <!-- HEADER -->
     <div class="text-center mb-5" data-aos="fade-up">
-      <h1>Contact Us</h1>
-      <p>We’d love to hear from you. Let’s discuss how we can help you grow.</p>
+      <h1 class="fw-bold">Contact Us</h1>
+      <p class="text-muted">We’d love to hear from you. Let’s discuss how we can help you grow.</p>
     </div>
 
-    <div class="row">
+    <div class="row g-4 align-items-stretch">
 
-      <!-- CONTACT INFO -->
-      <div class="col-md-5 mb-4" data-aos="fade-right">
-        <h4>Get In Touch</h4>
-        <p>Reach out to us for partnerships, investment opportunities, or general inquiries.</p>
+      <!-- CONTACT INFO CARD -->
+      <div class="col-lg-4" data-aos="fade-right">
+        <div class="p-4 h-100 bg-white rounded-4 shadow-sm">
+          <h4 class="mb-3 fw-semibold">Get In Touch</h4>
+          <p class="text-muted">
+            Reach out to us for partnerships, investment opportunities, or general inquiries.
+          </p>
 
-        <p><i class="fa-solid fa-phone icon"></i><a href="tel:+265881904700" class="text-decoration-none">+265 881 904 700</a></p>
-        <p><i class="fa-solid fa-envelope icon"></i> info@growthcapital.com</p>
-        <p><i class="fa-solid fa-location-dot icon"></i> Lilongwe, Malawi</p>
+          <div class="mt-4">
+            <p>
+              <i class="fa-solid fa-phone me-2 text-primary"></i>
+              <a href="tel:+265881904700" class="text-decoration-none text-dark">+265 881 904 700</a>
+            </p>
 
-        <div class="mt-3">
-          <a href="#" class="me-3"><i class="fa-brands fa-linkedin fa-2x"></i></a>
-          <a href="#" class="me-3"><i class="fa-brands fa-facebook fa-2x"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
+            <p>
+              <i class="fa-solid fa-envelope me-2 text-primary"></i>
+              info@growthcapital.com
+            </p>
+
+            <p>
+              <i class="fa-solid fa-location-dot me-2 text-primary"></i>
+              Lilongwe, Malawi
+            </p>
+          </div>
+
+          <!-- SOCIALS -->
+          <div class="mt-4">
+            <a href="#" class="me-3 text-dark"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+            <a href="#" class="me-3 text-dark"><i class="fa-brands fa-facebook fa-lg"></i></a>
+            <a href="#" class="text-dark"><i class="fa-brands fa-twitter fa-lg"></i></a>
+          </div>
         </div>
       </div>
 
-      <!-- FORM -->
-      <div class="col-md-7" data-aos="fade-left">
-        <form action="https://formspree.io/f/mayvlqap" method="POST">
+      <!-- BOOKING CARD -->
+      <div class="col-lg-8" data-aos="fade-left" id="booking">
+        <div class="p-4 bg-white rounded-4 shadow-sm h-100">
 
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-            </div>
-
-            <div class="col-md-6 mb-3">
-              <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-            </div>
+          <div class="text-center mb-0">
+            <h3 class="fw-semibold">Book a Free Consultation</h3>
+            <p class="text-muted mb-0">
+              Schedule a call to discuss your African market expansion strategy.
+            </p>
           </div>
 
-          <div class="mb-3">
-            <input type="text" name="subject" class="form-control" placeholder="Subject">
+          <!-- Calendly Embed -->
+          <div class="calendly-inline-widget"
+               data-url="https://calendly.com/austinwarry/consultation"
+               style="min-width:320px;height:650px;">
           </div>
 
-          <div class="mb-3">
-            <textarea name="message" rows="5" class="form-control" placeholder="Your Message" required></textarea>
-          </div>
+        </div>
+      </div>
 
-          <button class="btn btn-warning">Send Message</button>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column brand-section">
+      <div class="footer-logo-container">
+        <img src="/images/logo/Growth capital.jpg.png" alt="Growth Capital Logo" class="footer-logo-img" style="height:50px">
+      </div>
+      <h4 class="footer-logo">GROWTH<span>CAPITAL</span></h4>
+      <p>Your Strategic Partner for Market Expansion & Investment in Africa. We unlock potential while mitigating risk and maximizing returns.</p>
+      <!-- Social Media links -->
+      <!-- <div class="social-links">
+        <a href="#" aria-label="LinkedIn">LI</a>
+        <a href="#" aria-label="Twitter">TW</a>
+      </div> -->
+    </div>
 
-        </form>
+    <div class="footer-column">
+      <h3>Our Services</h3>
+      <ul>
+        <li><a href="services.html#Market Entry">Market Entry</a></li>
+        <li><a href="services.html#investor-funding">Investor Funding</a></li>
+        <li><a href="services.html#business-summit">Business Summit</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Trusted Partners</h3>
+      <ul>
+        <li><a href="https://kac-afrika.de/en/" target="_blank">Kac-Afrika</a></li>
+        <li><a href="https://galeenergy.com/" target="_blank">Gale Energy</a></li>
+        <li><a href="https://www.pallottiner.org/" target="_blank">Pallottiner</a></li>
+        <li><a href="https://www.auto-assemblyplants.com/" target="_blank">Chongqing Big Science</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Start Your Expansion</h3>
+      <p>Ready to scale across African markets? Connect with our team of experts today.</p>
+      <a href="/contact-us.html#booking" class="btn cta-button">Book a Free Consultation</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="bottom-container">
+      <p>&copy; 2026 Growth Capital. All rights reserved.</p>
+      <div class="legal-links">
+        <a href="https://lexoraworks.com" class="text-decoration-none"><p>Design by LexoraWorks</p></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
       </div>
 
     </div>
@@ -156,5 +226,8 @@ AOS.init();
   </div>
 </section>
 
+
+
 </body>
+
 </html>
