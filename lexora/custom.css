@@ -12,6 +12,15 @@ body { font-family: 'Poppins', sans-serif; }
   width: 100%;
   height: 100%;
 }
+.hero-slide-blog {
+  height: 40vh;
+  overflow: hidden;
+}
+.hero-img-blog {
+  object-fit: cover;   /* keeps quality */
+  width: 100%;
+  height: 100%;
+}
 
 .overlay {
   position: absolute;
@@ -334,3 +343,20 @@ footer { background:#0B1F3A; color:#aaa; text-align:center; padding:20px; }
 .cta-button:active {
   transform: translateY(-1px);
 }
+/* BLOG SECTION */
+  .blog-card {
+    border-radius: 15px;
+    transition: all 0.3s ease;
+  }
+
+  .blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  }
+
+  .blog-card img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 220px;
+    object-fit: cover;
+  }
