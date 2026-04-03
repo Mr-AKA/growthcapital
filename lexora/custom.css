@@ -360,3 +360,39 @@ footer { background:#0B1F3A; color:#aaa; text-align:center; padding:20px; }
     height: 220px;
     object-fit: cover;
   }
+
+  pitch us sectioN
+  .contact-section {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.main-title {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 18px;
+}
+
+.contact-box {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-box h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contact-box p {
+  color: #777;
+  font-size: 16px;
+}
+
+.btn {
+  border-radius: 30px;
+  font-weight: 500;
+}

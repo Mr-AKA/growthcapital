@@ -72,7 +72,7 @@
       <div class="overlay d-flex align-items-center justify-content-center text-center text-white">
         <div class="container" data-aos="fade-up">
           <h1 class="hero-title">Blog</h1>
-          <a href="contact-us.html" class="btn btn-warning">Book for an appointment</a>
+          <a href="contact-us.html" class="btn btn-warning">Book an appointment</a>
         </div>
       </div>
 
@@ -180,22 +180,22 @@
 <script>
   const posts = {
     1: {
-      title: "Emerging Investment Opportunities in Africa",
+      title: "Why Africa Is the Smart Investment Destination Amid Global Uncertainty",
       date: "March 2026",
       image: "images/Growth capital.jpg.jpeg",
-      content: "Full detailed content about investment opportunities in Africa. You can expand this with real data from your client."
+      content: '<p>In today’s volatile global environment—marked by geopolitical tensions, inflationary pressures, and shifting supply chains—investors are increasingly seeking markets that offer both resilience and growth. Africa is rapidly emerging as that strategic destination. With 54 diverse economies, expanding regional trade under the AfCFTA’s 1.3+ billion-person market, and relatively low correlation to traditional global shocks, the continent provides a powerful diversification advantage.At the same time, Africa’s fundamentals are exceptionally strong: a population projected to reach 2.5 billion by 2050, the world’s youngest workforce, and accelerating urbanization are driving sustained demand across financial services, housing, infrastructure, healthcare, and digital solutions. Unlike saturated developed markets, Africa offers access to high-growth, underserved sectors—from agriculture and renewable energy to fintech and logistics—where investors can capture both scale and superior returns.</p><p>Beyond its growth potential, Africa is becoming increasingly investor-ready and strategically indispensable. Governments are advancing reforms to improve the ease of doing business, while regional integration is unlocking cross-border opportunities and strengthening supply chains. As global companies adopt nearshoring and diversification strategies, Africa’s proximity to key markets, abundant natural resources critical for the energy transition, and rising manufacturing capacity position it as a competitive production and sourcing hub. Importantly, the continent has demonstrated strong resilience through global shocks, supported by adaptive businesses and growing intra-African trade. For investors willing to take a long-term, strategic view, Africa is no longer an alternative—it is a necessity. With the right partners to navigate local markets and structure opportunities, the continent offers a compelling combination of risk diversification, sustainable growth, and transformative returns in an increasingly uncertain world.</p>'
     },
     2: {
-      title: "Scaling Startups for Long-Term Growth",
+      title: "From Fuel to Future: Growth Capital Leads Malawi’s EV Transformation",
       date: "March 2026",
-      image: "https://via.placeholder.com/800x400",
-      content: "Detailed explanation on how startups can scale and attract investors."
+      image: "images/Growth capital.jpg.jpeg",
+      content: '<p>Growth Capital is driving a bold transformation in Malawi’s automobile industry through a landmark investment in electric mobility. As a leading investment facilitation firm in Africa, Growth Capital has successfully brokered a strategic partnership with renowned Malawian entrepreneur Napoleon Dzombe, resulting in the acquisition of one of the country’s first fleets of electric vehicles under the ND trademark. This milestone signals the beginning of a new era for Malawi—where innovation meets sustainability. Beyond reducing dependence on costly fuel imports, the introduction of electric vehicles positions Malawi to embrace cleaner, more efficient transport solutions while aligning with global shifts toward green energy.</p> <p>At the center of this breakthrough is Growth Capital’s role in structuring and negotiating the deal between Chongqing Big Science & Technology Development Co., Limited—a leading global automobile manufacturer and investor—and Mr. Dzombe. By bridging international capital with local entrepreneurial vision, Growth Capital has not only enabled technology transfer but also laid the foundation for long-term industrial development in Malawi. This initiative is expected to stimulate job creation, build technical capacity, and inspire further investment in sustainable transport, firmly placing Malawi on the map as an emerging player in Africa’s electric mobility revolution."</p>'
     },
     3: {
-      title: "Understanding Capital Raising in Emerging Markets",
+      title: "Powering Africa’s Fintech Revolution: How Growth Capital Is Unlocking Investment Opportunities",
       date: "March 2026",
-      image: "https://via.placeholder.com/800x400",
-      content: "Full guide on raising capital and navigating financial systems."
+      image: "images/Growth capital.jpg.jpeg",
+      content: "<p>Africa’s fintech sector is undergoing a powerful transformation, emerging as one of the most dynamic and fastest-growing industries on the continent. Driven by a young, tech-savvy population and over 1.2 billion mobile connections, digital finance is expanding far beyond the reach of traditional banking systems. The number of fintech companies has surged from 450 in 2020 to over 1,260 in early 2024, reflecting a wave of innovation across payments, lending, savings, and digital assets. From mobile money platforms like M-Pesa to fast-scaling startups such as Flutterwave and Paystack, fintech is not only reshaping how transactions are conducted but also unlocking financial access for millions of previously unbanked people. This rapid evolution is further supported by rising venture capital flows, which reached $5 billion in 2021, signaling strong global investor confidence in Africa’s digital financial future.</p> <p>In East Africa—particularly Kenya, Uganda, and Tanzania—fintech is at the heart of a broader economic shift toward digital economies and inclusive growth. Kenya stands out as a regional leader, with a highly developed mobile money ecosystem and a thriving startup landscape that continues to attract significant funding and innovation. Across the region, fintech is bridging critical gaps in access to credit, enabling small businesses to scale, and empowering women and youth who have traditionally been excluded from formal financial systems. At the center of this transformation is Growth Capital, playing a pivotal role in helping fintech startups unlock funding and scale their innovations. By connecting entrepreneurs with investors, structuring investment deals, and providing strategic guidance, Growth Capital is bridging the critical gap between innovative ideas and the capital required to bring them to life. Through investor funding, partnerships, and tailored financial solutions, the firm is enabling startups to navigate complex markets, accelerate growth, and deliver impactful financial services. While challenges such as access to capital and regulatory complexity remain, the trajectory is clear: fintech is not just a sector—it is the backbone of Africa’s next phase of economic growth, and Growth Capital is a key enabler of this rapidly evolving ecosystem.</p>"
     }
   };
 
@@ -208,6 +208,12 @@
     document.getElementById("image").src = posts[id].image;
     document.getElementById("content").innerText = posts[id].content;
   }
+  const formattedContent = posts[id].content
+  .split("\n\n")
+  .map(p => `<p>${p}</p>`)
+  .join("");
+
+document.getElementById("content").innerHTML = formattedContent;
 </script>
 
 </body>
@@ -251,7 +257,7 @@
     <div class="footer-column">
       <h3>Start Your Expansion</h3>
       <p>Ready to scale across African markets? Connect with our team of experts today.</p>
-      <a href="/contact-us.html#booking" class="btn cta-button"> Book for an appointment</a>
+      <a href="/contact-us.html#booking" class="btn cta-button"> Book an appointment</a>
     </div>
   </div>
 
